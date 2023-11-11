@@ -52,6 +52,26 @@
             };
         };
 
+        behaviors {
+            tdl: tap_dance_lower {
+                compatible = "zmk,behavior-tap-dance";
+                label = "TAP_DANCE_LOWER";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp BSPC>, <&sl 1>;
+            };
+        };
+
+        behaviors {
+            tdr: tap_dance_raise {
+                compatible = "zmk,behavior-tap-dance";
+                label = "TAP_DANCE_LOWER";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp ESC>, <&sl 2>;
+            };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -64,8 +84,8 @@
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &hml LSHFT A &hml LGUI S &hml LALT D &hml LCTRL F &kp G   &kp H &hmr LCTRL J  &hmr LALT K &hmr LGUI L   &hmr RSHFT SEMI &kp SQT
-   &td_shift &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                    &kp LGUI &mo 1 &kp RET   &kp SPACE &mo 2 &kp RALT
+   &td_shift &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RALT
+                    &kp LGUI &tdr &kp RET   &kp SPACE &tdl &kp RALT
                         >;
                 };
                 lower_layer {
