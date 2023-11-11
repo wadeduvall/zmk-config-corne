@@ -58,7 +58,7 @@
                 label = "TAP_DANCE_LOWER";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
-                bindings = <&kp BSPC>, <&sl 1>;
+                bindings = <&kp BSPC>, <&tog 1>;
             };
         };
 
@@ -68,7 +68,7 @@
                 label = "TAP_DANCE_RAISE";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
-                bindings = <&kp ESC>, <&sl 2>;
+                bindings = <&kp ESC>, <&tog 2>;
             };
         };
 
