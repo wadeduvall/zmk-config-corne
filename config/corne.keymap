@@ -65,7 +65,7 @@
         behaviors {
             tdr: tap_dance_raise {
                 compatible = "zmk,behavior-tap-dance";
-                label = "TAP_DANCE_LOWER";
+                label = "TAP_DANCE_RAISE";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
                 bindings = <&kp ESC>, <&sl 2>;
