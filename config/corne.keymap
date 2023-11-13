@@ -70,7 +70,7 @@
         behaviors {
             hlmr: hold_layer_mod_right {
                 compatible = "zmk,behavior-hold-tap";
-                label = "HOLD_MOD_RIGHT";
+                label = "HOLD_LAYER_MOD_RIGHT";
                 #binding-cells = <0>;
                 flavor = "balanced";
                 tapping-term-ms = <280>;
