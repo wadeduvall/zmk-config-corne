@@ -132,8 +132,8 @@ default_layer {
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TILDE    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &trans
-   &trans  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &trans  &trans       &up       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp LSHFT  &left       &down       &right       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
                                     &trans     &trans       &trans      &trans  &trans   &trans
                         >;
                 };
