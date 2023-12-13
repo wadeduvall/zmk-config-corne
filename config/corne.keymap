@@ -108,6 +108,16 @@
             };
         };
 
+        behaviors {
+            tdd: tap_dance_delete {
+                compatible = "zmk,behavior-tap-dance";
+                label = "TAP_DANCE_DELETE";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&kp BSPC>, <&kp DEL>;
+            };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 default_layer {
@@ -121,7 +131,7 @@ default_layer {
    &kp LCTRL &hml LSHFT A &hml LGUI S &hml LALT D &hml LCTRL F &kp G   &kp H &hmr LCTRL J  &hmr LALT K &hlmr 0 L  &hmr RSHFT SEMI &kp SQT
 //   &kp LCTRL &hml LSHFT A &hml LGUI S &hml LALT D &hml LCTRL F &kp G   &kp H &hmr LCTRL J  &hmr LALT K &hmr LGUI L   &hmr RSHFT SEMI &kp SQT
    &td_shift &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RALT
-                    &tdr &kp ESC &kp RET   &kp SPACE &kp BSPC &tdl
+                    &tdr &kp ESC &kp RET   &kp SPACE &tdd &tdl
                         >;
                 };
                 lower_layer {
